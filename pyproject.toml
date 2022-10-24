@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "anaconda-cc"
+version = "0.1.0"
+description = ""
+authors = ["Júlio Lacerda <julio.castro.lacerda@gmail.com>"]
+readme = "README.md"
+packages = [{include = "anaconda_cc"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uvicorn = {extras = ["standart"], version = "^0.19.0"}
+fastapi = "^0.85.1"
+pydantic = "^1.10.2"
+sqlalchemy = "^1.4.42"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+mypy = "^0.982"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
